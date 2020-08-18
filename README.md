@@ -1,4 +1,4 @@
-# Group-6-Project
+# Neptune Project
 
 this is the ISQTB Bootcamp web project 
 
@@ -7,8 +7,8 @@ this is the ISQTB Bootcamp web project
 ## Features
 
 ## Contributors
-Jawad  
-Roaa  
-Reema  
-Ruba  
-Saddem  
+Jawad Al-Saeed  
+Reema Aldawsari  
+Roaa Alotaibi  
+Ruba Alkhateeb  
+Sadeem Alzimami  
