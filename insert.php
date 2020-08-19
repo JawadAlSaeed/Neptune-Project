@@ -122,15 +122,15 @@ License: You must have a valid license purchased only from themeforest(the above
 									<!--begin::Page Heading-->
 									<div class="d-flex align-items-baseline mr-5">
 										<!--begin::Page Title-->
-										<h2 class="subheader-title text-dark font-weight-bold my-2 mr-3">Add Expense / Income </h2>
+										<h2 class="subheader-title font-weight-bold my-2 mr-3" style="color: #1BC5BD;">Neptune</h2>
 										<!--end::Page Title-->
 										<!--begin::Breadcrumb-->
 										<ul class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold my-2 p-0">
 											<li class="breadcrumb-item">
-												<a href="" class="text-muted">Dashboard</a>
+												<a href="index.html" class="text-muted">Dashboard</a>
 											</li>
 											<li class="breadcrumb-item">
-												<a href="" class="text-muted">Insert</a>
+												<a href="insert.html" class="text-muted">Insert</a>
 											</li>
 										</ul>
 										<!--end::Breadcrumb-->
@@ -150,7 +150,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<!--begin::Card-->
 										<div class="card card-custom gutter-b example example-compact">
 											<div class="card-header">
-												<h3 class="card-title">Please fill the form</h3>
+												<h3 class="card-title">Add Expense / Income</h3>
 												<div class="card-toolbar">
 												</div>
 											</div>
@@ -163,13 +163,11 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="card-body">
 													<div class="form-group row">
 														<div class="col-lg-6">
+															<label>Choose type</label>
 															<div class="radio-inline">
-                                                                
 																<label class="radio radio-solid">
 																<input type="radio" name="type" checked="checked" value="1" />Expense
 																<span></span></label>
-                                                                
-                                                                
 																<label class="radio radio-solid">
 																<input type="radio" name="type" value="2" />Income
 																<span></span></label>
