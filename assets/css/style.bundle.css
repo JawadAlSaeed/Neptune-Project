@@ -58160,8 +58160,7 @@ body {
   background-color: #ffffff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  .aside-secondary-enabled .aside {
-    width: 425px; }
+  
   .aside-secondary-disabled .aside {
     width: 100px; }
   .aside .aside-primary {
