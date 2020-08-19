@@ -70,7 +70,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<!--begin::Nav-->
 							<ul class="nav flex-column" role="tablist">
 								<!--begin::Item-->
-								<li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Latest Projects">
+								<li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Dashboard">
 									<a href="#" class="nav-link btn btn-icon btn-clean btn-lg " data-toggle="tab" data-target="#kt_aside_tab_1" role="tab">
 										<span class="svg-icon svg-icon-xl">
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
@@ -87,7 +87,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								</li>
 								<!--end::Item-->
 								<!--begin::Item-->
-								<li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Metronic Features">
+								<li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Insert">
 									<a href="#" class="nav-link btn btn-icon btn-clean btn-lg active" data-toggle="tab" data-target="#kt_aside_tab_2" role="tab">
 										<span class="svg-icon svg-icon-xl">
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Group.svg-->
