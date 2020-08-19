@@ -1,6 +1,6 @@
 # Neptune Project
 
-this is the ISQTB Bootcamp web project 
+This is the ISQTB Bootcamp web project 
 
 ## Summary
 
