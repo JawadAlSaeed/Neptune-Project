@@ -16,8 +16,8 @@ This is an app about Budget and expenses tracking.
 
 ## Contributors
 
-[Jawad Al-Saeed](https://github.com/JawadAlSaeed)  
-[Roaa Alotaibi](https://github.com/rroaa)  
-[Sadeem Alzimami](https://github.com/sadeemNasser)  
-[Reema Aldawsari](https://github.com/ReemaAbdullah)  
-[Ruba Alkhateeb](https://github.com/RubaAlkhateeb)  
+* [Jawad Al-Saeed](https://github.com/JawadAlSaeed)  
+* [Roaa Alotaibi](https://github.com/rroaa)  
+* [Sadeem Alzimami](https://github.com/sadeemNasser)  
+* [Reema Aldawsari](https://github.com/ReemaAbdullah)  
+* [Ruba Alkhateeb](https://github.com/RubaAlkhateeb)  
