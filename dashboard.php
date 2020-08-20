@@ -341,6 +341,11 @@
 															$category = $row["category"];
 															$recipient = $row["recipient"];
 															$date = $row["date"];
+															if($type == 1){
+																$typeName = "Expense";
+															}else{
+																$typeName = "Income";
+															}
 												?>
 												
 													<table class="table table-borderless table-vertical-center">
@@ -371,7 +376,7 @@
 																<td></td>
 																<td></td>
 																<td class="text-right pr-0 ">
-																	<span class="text-muted font-weight-bold d-block font-size-sm">Paid</span>
+																	<span class="text-muted font-weight-bold d-block font-size-sm"><?php echo $typeName;  ?></span>
 																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg"><?php echo $amount; ?></span>
 																</td>
 																<!-- <td class="text-right">
