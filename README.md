@@ -17,14 +17,14 @@ This is an app about Budget and expenses tracking.
 * Analyze Balance
 
 
-## installation 
+## Installation 
 
-1. Download [Xampp](https://www.apachefriends.org/index.html)
-2. Add the project file inside C:\xampp\htdocs 
-3. Run Xampp and start "Apache" and "MySQL" modules
-4. Press the admin button in the "MySQL" mudule and create a database named "neptunedb"
-5. Import the "neptune.sql" file into the neptunedb
-6. Open your browser and go to Localhost/Neptune/dashboard.php
+1. Download [Xampp](https://www.apachefriends.org/index.html).
+2. Add the project file inside C:\xampp\htdocs directory.
+3. Run Xampp and start "Apache" and "MySQL" modules.
+4. Press the admin button in the "MySQL" mudule and create a database named "neptunedb".
+5. Import the "neptune.sql" file into the neptunedb.
+6. Open your browser and go to Http://Localhost/Neptune/dashboard.php URL.
 7. Have fun!
 
 P.S. Make sure when you clone the project you name it "neptune" and not "neptune-project"
