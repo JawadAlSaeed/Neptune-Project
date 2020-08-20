@@ -184,106 +184,65 @@
 								<!--begin::Row-->
 								<div class="row">
 									<div class="col-xl-4">
-										<!--begin::Mixed Widget 4-->
-										<div class="card card-custom bg-radial-gradient-success gutter-b card-stretch">
-											<!--begin::Header-->
-											<div class="card-header border-0 py-5">
-												<h3 class="card-title font-weight-bolder text-white">Sales Progress</h3>
-												<div class="card-toolbar">
-													<div class="dropdown dropdown-inline">
-														<a href="#" class="btn btn-text-white btn-hover-white btn-sm btn-icon border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-															<i class="ki ki-bold-more-hor"></i>
-														</a>
-														<div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-															<!--begin::Navigation-->
-															<ul class="navi navi-hover">
-																<li class="navi-header pb-1">
-																	<span class="text-primary text-uppercase font-weight-bold font-size-sm">Add new:</span>
-																</li>
-																<li class="navi-item">
-																	<a href="#" class="navi-link">
-																		<span class="navi-icon">
-																			<i class="flaticon2-shopping-cart-1"></i>
-																		</span>
-																		<span class="navi-text">Order</span>
-																	</a>
-																</li>
-																<li class="navi-item">
-																	<a href="#" class="navi-link">
-																		<span class="navi-icon">
-																			<i class="flaticon2-calendar-8"></i>
-																		</span>
-																		<span class="navi-text">Event</span>
-																	</a>
-																</li>
-																<li class="navi-item">
-																	<a href="#" class="navi-link">
-																		<span class="navi-icon">
-																			<i class="flaticon2-graph-1"></i>
-																		</span>
-																		<span class="navi-text">Report</span>
-																	</a>
-																</li>
-																<li class="navi-item">
-																	<a href="#" class="navi-link">
-																		<span class="navi-icon">
-																			<i class="flaticon2-rocket-1"></i>
-																		</span>
-																		<span class="navi-text">Post</span>
-																	</a>
-																</li>
-																<li class="navi-item">
-																	<a href="#" class="navi-link">
-																		<span class="navi-icon">
-																			<i class="flaticon2-writing"></i>
-																		</span>
-																		<span class="navi-text">File</span>
-																	</a>
-																</li>
-															</ul>
-															<!--end::Navigation-->
-														</div>
-													</div>
-												</div>
-											</div>
-											<!--end::Header-->
-											<!--begin::Body-->
-											<div class="card-body d-flex flex-column p-0">
-												<!--begin::Chart-->
-												<div id="kt_mixed_widget_4_chart" style="height: 200px"></div>
+										<!--begin::Chart-->
+										<div id="piechart" style=" width: 413px; height: 500px;"></div>                                                
+                                                
+												<?php
+												  $con = mysqli_connect("localhost","root","","Neptune");
+												  
+												?>
+												
+													<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+													<script type="text/javascript">
+													  google.charts.load('current', {'packages':['corechart']});
+													  google.charts.setOnLoadCallback(drawChart);
+												
+													  function drawChart() {
+												
+														var data = google.visualization.arrayToDataTable([
+														  ['amount', 'category'],
+														 <?php
+															
+														 $sql = "SELECT category , SUM(amount) as amount FROM Expenses GROUP BY category";
+															
+														 $fire = mysqli_query($con,$sql);
+														  while ($result = mysqli_fetch_assoc($fire)) {
+															echo"['".$result['category']."',".$result['amount']."],";
+														  }
+												
+														 ?>
+														]);
+												
+														var options = {
+														 
+														  colors: [ '#1BC5BD',  '#F64E60', '#A6DCEF' , '#E36387',  '#AA7762',  '#8566AA', '#6993FF' , '#F2AAAA'] ,
+														   chartArea: {
+														left: "2%",
+														top: "1%",
+														height: "94%",
+														width: "94%" 
+													} ,
+															
+															 legend:'bottom',
+														  
+														  pieHole: 0.4
+														};
+												
+														var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+														chart.draw(data, options);
+														  
+														
+													  }
+													</script>
+												  
+																				  
+																								
+																								
+																								
+																								
+																								
+																								
 												<!--end::Chart-->
-												<!--begin::Stats-->
-												<div class="card-spacer bg-white card-rounded flex-grow-1">
-													<!--begin::Row-->
-													<div class="row m-0">
-														<div class="col px-8 py-6 mr-8">
-															<div class="font-size-sm text-muted font-weight-bold">Average Sale</div>
-															<div class="font-size-h4 font-weight-bolder">$650</div>
-														</div>
-														<div class="col px-8 py-6">
-															<div class="font-size-sm text-muted font-weight-bold">Commission</div>
-															<div class="font-size-h4 font-weight-bolder">$233,600</div>
-														</div>
-													</div>
-													<!--end::Row-->
-													<!--begin::Row-->
-													<div class="row m-0">
-														<div class="col px-8 py-6 mr-8">
-															<div class="font-size-sm text-muted font-weight-bold">Annual Taxes</div>
-															<div class="font-size-h4 font-weight-bolder">$29,004</div>
-														</div>
-														<div class="col px-8 py-6">
-															<div class="font-size-sm text-muted font-weight-bold">Annual Income</div>
-															<div class="font-size-h4 font-weight-bolder">$1,480,00</div>
-														</div>
-													</div>
-													<!--end::Row-->
-												</div>
-												<!--end::Stats-->
-											</div>
-											<!--end::Body-->
-										</div>
-										<!--end::Mixed Widget 4-->
 									</div>
 									<div class="col-xl-8">
 										<!--begin::Base Table Widget 6-->
@@ -294,7 +253,7 @@
 													<span class="card-label font-weight-bolder text-dark">Latest Transaction</span>
 													<!-- <span class="text-muted mt-3 font-weight-bold font-size-sm">More than 400+ new members</span> -->
 												</h3>
-												<div class="card-toolbar">
+												<!-- <div class="card-toolbar">
 													<ul class="nav nav-pills nav-pills-sm nav-dark-75">
 														<li class="nav-item">
 															<a class="nav-link py-2 px-4 active" data-toggle="tab" href="#kt_tab_pane_3_1">All</a>
@@ -306,7 +265,7 @@
 															<a class="nav-link py-2 px-4 " data-toggle="tab" href="#kt_tab_pane_3_3">Expenses</a>
 														</li>
 													</ul>
-												</div>
+												</div> -->
 											</div>
 											<!--end::Header-->
 											<!--begin::Body-->
@@ -330,7 +289,7 @@
 														die("Connection failed: " . mysqli_connect_error());
 													}
 													
-													$sql = "SELECT * FROM Expenses ORDER BY id DESC LIMIT 0,5";
+													$sql = "SELECT * FROM Expenses ORDER BY id DESC LIMIT 0,10";
 													$result = $conn->query($sql);
 													
 													if ($result->num_rows > 0) {
@@ -356,8 +315,8 @@
 																<th class="p-0" style="min-width: 150px"></th>
 																<th class="p-0" style="min-width: 120px"></th>
 																<th class="p-0" style="min-width: 70px"></th>
-																<th class="p-0" style="min-width: 70px"></th>
-																<th class="p-0" style="min-width: 50px"></th>
+																<!-- <th class="p-0" style="min-width: 70px"></th>
+																<th class="p-0" style="min-width: 50px"></th> -->
 															</tr>
 														</thead>
 														<tbody>
@@ -382,21 +341,21 @@
 																<!-- <td class="text-right">
 																	<span class="font-weight-bolder text-primary"></span>
 																</td> -->
-																<td class="text-right pr-0" >
+																<!-- <td class="text-right pr-0" >
 																	<a href="#" class="btn btn-icon btn-light btn-sm" >
-																		<span class="svg-icon svg-icon-md svg-icon-success">
+																		<span class="svg-icon svg-icon-md svg-icon-success">-->
 																			<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Arrow-right.svg-->
-																			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																			<!--<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 																				<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 																					<polygon points="0 0 24 0 24 24 0 24" />
 																					<rect fill="#000000" opacity="0.3" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
 																					<path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
 																				</g>
-																			</svg>
+																			</svg>-->
 																			<!--end::Svg Icon-->
-																		</span>
+																		<!--</span>
 																	</a>
-																</td>
+																</td> -->
 															</tr>
 														</tbody>
 													</table>
