@@ -301,6 +301,19 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 													</div>
 												</div>
+												<!--mgs-->
+												<p style="padding-left: 30px; color:#1BC5BD;">
+												
+													<?php
+													if (!empty($_GET['status'])){
+													if ($_GET['status'] == 'success') {
+														echo "Submitted Successfully!";
+													}else {
+														echo "";
+													  }}
+													?>
+												</p>
+											<!--mgs-->
 											</form>
 											<!--end::Form-->
 										</div>
