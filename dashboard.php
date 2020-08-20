@@ -226,7 +226,7 @@
 																]);
 
 																var options = {
-																
+																fontName: 'Poppins' ,
 																colors: [ '#1BC5BD',  '#F64E60', '#A6DCEF' , '#E36387',  '#AA7762',  '#8566AA', '#6993FF' , '#F2AAAA'] ,
 																chartArea: {
 																left: "2%",
@@ -287,6 +287,7 @@
 																?>
 															]);
 															var options = {
+																fontName: 'Poppins' ,
 																	chart: {
 																		title: '   ',
 																		subtitle: '   ',
@@ -344,6 +345,7 @@
 																?>
 															]);
 															var options = {
+																fontName: 'Poppins' ,
 																	chart: {
 																		title: '    ',
 																		subtitle: '    ',
