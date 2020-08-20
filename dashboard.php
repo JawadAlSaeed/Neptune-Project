@@ -402,7 +402,7 @@
 													</table>
 													<?php }
 													} else {
-														echo "0 results";
+														echo "No results, Enter your transactions by clicking on add expenses/income!";
 													}
 													
 													$conn->close();?>
