@@ -1,3 +1,6 @@
+![Neptune](Logo.png)
+
+
 # Neptune Project
 
 This is the ISQTB Bootcamp web project 
