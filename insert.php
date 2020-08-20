@@ -169,6 +169,9 @@ License: You must have a valid license purchased only from themeforest(the above
 														elseif($_GET["data"] == 'in'){
 															echo '<h3 class="card-title">Add Income</h3>';
 														}
+														elseif($_GET["status"] == 'success'){
+															echo '<h3 class="card-title">Add Expense / Income</h3>';
+														}
 													}
 													else{
 														echo '<h3 class="card-title">Add Expense / Income</h3>';
@@ -199,8 +202,17 @@ License: You must have a valid license purchased only from themeforest(the above
 																		<input type="radio" name="type" checked="checked" value="2" />Income
 																		<span></span></label>';
 																	}
+																	elseif($_GET["status"] == 'success'){
+																		echo '<label>Choose type</label><br>
+																		<label class="radio radio-solid">
+																		<input type="radio" name="type" checked="checked" value="1" />Expense
+																		<span></span></label>
+																		<label class="radio radio-solid">
+																		<input type="radio" name="type" value="2" />Income
+																		<span></span></label>';
+																	}
 																}
-																else{
+																else{										
 																	echo '<label>Choose type</label><br>
 																	<label class="radio radio-solid">
 																	<input type="radio" name="type" checked="checked" value="1" />Expense
@@ -225,7 +237,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	<option class="form-control" value="Food">Food & Drinks</option>
 																	<option class="form-control" value="Shopping">Shopping</option>
 																	<option class="form-control"value="Housing">Housing</option>
-																	<option class="form-control" value="Transporation">Transporation</option>
+																	<option class="form-control" value="Transportation">Transportation</option>
 																	<option class="form-control" value="Vehicle">Vehicle</option>
 																	<option class="form-control" value="Entertainment">Entertainment</option>
 																	<option class="form-control" value="Pc">Video Games & PC</option>

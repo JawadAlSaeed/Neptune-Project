@@ -22,7 +22,7 @@ VALUES ('$_POST[amount]' , '$_POST[type]' , '$_POST[category]' ,'$_POST[recipien
 
 if (mysqli_query($conn, $sql)) {
     
-    header("location:insert.php?status=success"); 
+    header("location:insert.php?status=success&data="); 
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
