@@ -184,65 +184,174 @@
 								<!--begin::Row-->
 								<div class="row">
 									<div class="col-xl-4">
-										<!--begin::Chart-->
-										<div id="piechart" style=" width: 413px; height: 500px;"></div>                                                
-                                                
+										<!--begin::Mixed Widget 4-->
+										<div class="card card-custom bg-radial-gradient-success gutter-b card-stretch">
+											<!--begin::Header-->
+											<div class="card-header border-0 py-5">
+												<h3 class="card-title font-weight-bolder text-white"> Category Analysis </h3>
+											</div>
+											<!--end::Header-->
+											<!--begin::Body-->
+											<div class="card-body d-flex flex-column p-0">
+												<!--begin::Chart-->
+												<div id="piechart" style=" width: 413px; height: 500px;"></div>                                                
+																								
 												<?php
-												  $con = mysqli_connect("localhost","root","","Neptune");
-												  
-												?>
+												$con = mysqli_connect("localhost","root","","Neptune");
 												
+												?>
+
 													<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 													<script type="text/javascript">
-													  google.charts.load('current', {'packages':['corechart']});
-													  google.charts.setOnLoadCallback(drawChart);
-												
-													  function drawChart() {
-												
+													google.charts.load('current', {'packages':['corechart']});
+													google.charts.setOnLoadCallback(drawChart);
+
+													function drawChart() {
+
 														var data = google.visualization.arrayToDataTable([
-														  ['amount', 'category'],
-														 <?php
+														['amount', 'category'],
+														<?php
 															
-														 $sql = "SELECT category , SUM(amount) as amount FROM Expenses GROUP BY category";
+														$sql = "SELECT category , SUM(amount) as amount FROM Expenses GROUP BY category";
 															
-														 $fire = mysqli_query($con,$sql);
-														  while ($result = mysqli_fetch_assoc($fire)) {
+														$fire = mysqli_query($con,$sql);
+														while ($result = mysqli_fetch_assoc($fire)) {
 															echo"['".$result['category']."',".$result['amount']."],";
-														  }
-												
-														 ?>
+														}
+
+														?>
 														]);
-												
+
 														var options = {
-														 
-														  colors: [ '#1BC5BD',  '#F64E60', '#A6DCEF' , '#E36387',  '#AA7762',  '#8566AA', '#6993FF' , '#F2AAAA'] ,
-														   chartArea: {
+														
+														colors: [ '#1BC5BD',  '#F64E60', '#A6DCEF' , '#E36387',  '#AA7762',  '#8566AA', '#6993FF' , '#F2AAAA'] ,
+														chartArea: {
 														left: "2%",
 														top: "1%",
 														height: "94%",
 														width: "94%" 
 													} ,
 															
-															 legend:'bottom',
-														  
-														  pieHole: 0.4
+															legend:'bottom',
+														
+														pieHole: 0.4
 														};
-												
+
 														var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 														chart.draw(data, options);
-														  
 														
-													  }
+														
+													}
 													</script>
-												  
-																				  
-																								
-																								
-																								
-																								
-																								
-																								
-												<!--end::Chart-->
+										
+													<!--end::Chart-->
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Mixed Widget 4-->
+										<!--begin::Mixed Widget 5-->
+										<div class="card card-custom bg-radial-gradient-success gutter-b card-stretch">
+											<!--begin::Header-->
+											<div class="card-header border-0 py-5">
+												<h3 class="card-title font-weight-bolder text-white"> Category Analysis </h3>
+											</div>
+											<!--end::Header-->
+											<!--begin::Body-->
+											<div class="card-body d-flex flex-column p-0">
+													<!--begin::Expenses Chart-->
+													<div id="columnchart_material" style="width: 410px; height: 300px;"></div>
+													
+													<?php
+														$con = mysqli_connect("localhost","root","","Neptune");
+													?>
+																									
+													<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+														<script type="text/javascript">
+														google.charts.load('current', {'packages':['bar']});
+														google.charts.setOnLoadCallback(drawChart);
+													
+														function drawChart() {
+															var data = google.visualization.arrayToDataTable([['Amount', 'Date'],
+													<?php                                                                                                                
+													$sql = "SELECT date , amount FROM Expenses WHERE type=1";                                                                                                        
+													$fire = mysqli_query($con,$sql);
+													while ($result = mysqli_fetch_assoc($fire)) {
+													echo"['".$result['date']."',".$result['amount']."],"; }
+														?>
+													]);
+													var options = {
+															chart: {
+																title: 'Company Performance',
+																subtitle: 'Expances',
+															} ,
+														bar: {groupWidth: "25%"},
+														colors: [ '#1BC5BD' ] ,
+														legend: { position: "none" }
+															};
+													
+															var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+													
+															chart.draw(data, google.charts.Bar.convertOptions(options));
+														}
+														</script>
+																									
+													
+																																															
+												<!--end::Expenses Chart-->
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Mixed Widget 5-->
+										<!--begin::Mixed Widget 6-->
+										<div class="card card-custom bg-radial-gradient-success gutter-b card-stretch">
+											<!--begin::Header-->
+											<div class="card-header border-0 py-5">
+												<h3 class="card-title font-weight-bolder text-white"> Category Analysis </h3>
+											</div>
+											<!--end::Header-->
+											<!--begin::Body-->
+											<div class="card-body d-flex flex-column p-0">
+												 <!--begin::Income Chart-->
+													<div id="columnchart_material1" style="width: 415px; height: 300px;"></div>
+													
+													<?php
+														$con = mysqli_connect("localhost","root","","Neptune");
+													?>
+																									
+													<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+														<script type="text/javascript">
+														google.charts.load('current', {'packages':['bar']});
+														google.charts.setOnLoadCallback(drawChart);
+													
+														function drawChart() {
+															var data = google.visualization.arrayToDataTable([['Amount', 'Date'],
+													<?php                                                                                                                
+													$sql = "SELECT date , amount FROM Expenses WHERE type=2";                                                                                                        
+													$fire = mysqli_query($con,$sql);
+													while ($result = mysqli_fetch_assoc($fire)) {
+													echo"['".$result['date']."',".$result['amount']."],"; }
+														?>
+													]);
+													var options = {
+															chart: {
+																title: 'Company Performance',
+																subtitle: 'Expances',
+															} ,
+														bar: {groupWidth: "25%"},
+														colors: [ '#F64E60' ] ,
+														legend: { position: "none" }
+															};
+													
+															var chart = new google.charts.Bar(document.getElementById('columnchart_material1'));
+													
+															chart.draw(data, google.charts.Bar.convertOptions(options));
+														}
+														</script>
+												<!--end::Income Chart-->	
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Mixed Widget 6-->
 									</div>
 									<div class="col-xl-8">
 										<!--begin::Base Table Widget 6-->
