@@ -63,7 +63,7 @@
 													<!--begin::Nav-->
 													<ul class="nav flex-column" role="tablist">
 														<!--begin::Item-->
-														<li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Dashbord">
+														<li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Dashboard">
 															<a href="Dashboard.php" class="nav-link btn btn-icon btn-clean btn-lg active">
 																<span class="svg-icon svg-icon-xl">
 																	<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
