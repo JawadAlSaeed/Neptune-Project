@@ -104,7 +104,17 @@ License: You must have a valid license purchased only from themeforest(the above
 									</a>
 								</li>
 								<!--end::Item-->
-								
+                                <!--begin::Item-->
+                                <li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Report">
+                                    <a href="Neptune/report.php" class="nav-link btn btn-icon btn-clean btn-lg active">
+                                        <span class="svg-icon svg-icon-xl">
+                                            <!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAADIElEQVRIie2V32sTWRTHv+feSZOwLlZR0cy0IvRJwR+goEm6OEnA3cCqfVDBF5/ER/E/6D+giK/ii4IIPilu0W0m2W6TaVlX6T7ow65WqZmIYP1RkDSZmXt8Wqm2M5nUvOn3be499/uZe86ZOcC3JgraGKj+nlIkjzCwtaMJ80JyoX3+SbHY+ipwyh7fQ5BnmfiS5vU962SiZPsMM7Yn37dOdwNfJqNWujI0NhYHMxmT4wcN++76sPjUpPWrXqvs1mvW1aGxsXgUhlhpkVm4T4rFVsq2Tggk/qmnf37TycjJmDOAuNBcG78cBb4iGAA2VipriPFqbnj4bSeT1cADwTKBDST4dSSixHxq4t5AN/BAcDdqpPM2xeSuVLV8eKBW2qcUS2aeaPbHrwed0XoBBgAnXbgDZhqsVvtjAMCY9eEO9wbMTKlpKw8lfiCoIWbxnwC7dVeMwzQ9EPEc8Kkn9Fop8NOKnGrDtpO6XT7Vtyj/bmRyt1jRv41s7rb7wftTj/PJwcnJdd3cITJYoXnUceavPTfNd0vXXx069MFJ564qahV7DjZsSxc+zeL4cT8ohoimjenSTgBIVSob/u/yrwIzeE89a/4VFvMik3+qXNoKAJqm+TFKemHx0ZuLiL94JqNmjTLh0ZI3TABAW/PWauz9CA6cQRFrzLK+pWZ9NqUa2dxtZp6Qih476fzNpmjdA3MdAGK+24bgxTDLSGAnY84Q+MCy9Wyh4kNtGqyWdyS9vpHNif4qALQ04bstDk115K6WoPtGtbysc51soaKIc2Ax82DvXhcABMtkLCbWhPlFrvGLTP6pYVuLum0dA7gJxjwg1gMqKRT/Njecn43q1RUYAOrpvAPgJnhUGFP7++ut+ALMQmhKewL+JBpVdaDjjA5TYI1Fu+2zL1c1vfo8X3geBf5sQsGNn6YclmrbasC+xPaEL0NrvmKqSUADjSpMWXOGbY0wswRR8N9giZipTeCXz01z0aiVAku58garP/Rq+Zyz37wIoodRgF9Kt0tnWNH9oP3AWxi2NaIYvxCYg2KCxCACuNzIFG50e/a7eq6PKKlS0lHnvYkAAAAASUVORK5CYII=">
+                                            <!--end::Svg Icon-->
+                                        </span>
+                                    </a>
+                                </li>
+                                <!--end::Item-->								
 						</div>
 						<!--end::Nav Wrapper-->
 					</div>

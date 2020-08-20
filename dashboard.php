@@ -63,7 +63,7 @@
 													<!--begin::Nav-->
 													<ul class="nav flex-column" role="tablist">
 														<!--begin::Item-->
-														<li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Dashbord">
+														<li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Dashboard">
 															<a href="Dashboard.php" class="nav-link btn btn-icon btn-clean btn-lg active">
 																<span class="svg-icon svg-icon-xl">
 																	<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
@@ -92,6 +92,17 @@
 																		</g>
 																	</svg> -->
 																	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAD/0lEQVRIie2US2xUVRjHf9+986BMB2ciDaUUFRR5JRUzdwIUiSCVUBNdaIyJb03EoAsDwcjCBNwYSDAaF8SwwaBBhcQFany00IhQQubemk7SoCsIldJQpowdOrczc+ccF3Rqmc4VQkx00f/uu9/jd77/ybkwrWn939R4onNZ44nOZX55x3E29/T0POCXN24XLKYcFlMO++WVUk1KqS7Hcdb+q2AEAUy0ln+oimutO2zbfnpq+ySl0+l4oVBI1JoQi8UWFw1j1t6RK62n3PyanFZxgBAytiQUTr8ejXc9GK4bHh4ePquUcg3DeFFr/cJ4e1lE3kgkEvtrglOp1DoR6aqGBoNBmpub2Tpwno6RbM3VYmaAr+65n6g7RiaT8XNgj2VZO+AWra6vryc95k5AGwJBPr17EUcXLuXh+lkAZMse+64MEo1GEfF1/x3btrffMjgYDPJ7IT8Rt8+Kk5xZz73hGeyce9fE99OjOQzDwDRNv1HHPc/bDxCoSlwA9lRXe563rFgoLgXuA0jnc9lRN/+baIgCz0Tj80taiymi8/l8v2mav3qe1wKsmTTmUF1d3SvLly8vQtUdV6u7u7uutbXVBZh3pvNO5cl5oB5AC98EDP3uH6va0rV6U6nULhHZOR5+kEgk3hYRXcn7Wu04znPhcHhrJb64si2jhVeB6yfWPF4uS2/jqWPdc7s7N/mM0cAOy7K2T4b6gm3bfktrfVApFZr8fbB1wxEMtQLha8ADEFiNlu+bTh07gN41Mc8wjCLwvGVZU65uClhrLbZt7wU+8jvUpdWPnr3UuuEpwzQWgLwPjIyv9nLj6bXbKnWFQuFDy7IO+Tjx9x339fWFXNc9ADw7kRTpDIVCqVgstuLj7NACrbUERPSbsYZzlZqT7rX4tqGBVQANZiD/3byFP2cyGcfzvGtVrC8sy7pQCQIAvb29kbGxsSNAe5UDbVrrtkgkwo8D5xjySgjw2pzmJfHA9QexMRIhlBmkqBQ5pWZGIpH2bDbb7nkeVbPOcP3VQMXOUqm0RWt9A7SiUqmEUoqVkSjjlrL78kVy5TKe1nw+fJmiUgAsCM8AoBpaSwEAy7L22rZtArurC7TW5HI5tsxu5HguS14pvv1zmB9GrmIARa3HNxC2zJ6D67qUy+Wbgm94x47jbNZa7wNMABH5TCl1MBwOR6LR6OIuN9/0SS7zWL9XWjS5r8E0Lz45846Ol6Kxs6Ojo/2u6w5Vg8LhsNPS0nK1JhgglUo9ISJfAnVa6/eSyeSu6pr5J39q8sT8BRHRIo8Mrl5//qYrVmnKk0kmk0eB9cAVv6b+hzYOAC5a528HWhMMYFnWGaXUOqDft9E0Nhmm4ffHmta0/jv9BXBdovo9Xz8fAAAAAElFTkSuQmCC">
+																	<!--end::Svg Icon-->
+																</span>
+															</a>
+														</li>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Report">
+															<a href="report.php" class="nav-link btn btn-icon btn-clean btn-lg">
+																<span class="svg-icon svg-icon-xl">
+																	<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
+																	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAADIElEQVRIie2V32sTWRTHv+feSZOwLlZR0cy0IvRJwR+goEm6OEnA3cCqfVDBF5/ER/E/6D+giK/ii4IIPilu0W0m2W6TaVlX6T7ow65WqZmIYP1RkDSZmXt8Wqm2M5nUvOn3be499/uZe86ZOcC3JgraGKj+nlIkjzCwtaMJ80JyoX3+SbHY+ipwyh7fQ5BnmfiS5vU962SiZPsMM7Yn37dOdwNfJqNWujI0NhYHMxmT4wcN++76sPjUpPWrXqvs1mvW1aGxsXgUhlhpkVm4T4rFVsq2Tggk/qmnf37TycjJmDOAuNBcG78cBb4iGAA2VipriPFqbnj4bSeT1cADwTKBDST4dSSixHxq4t5AN/BAcDdqpPM2xeSuVLV8eKBW2qcUS2aeaPbHrwed0XoBBgAnXbgDZhqsVvtjAMCY9eEO9wbMTKlpKw8lfiCoIWbxnwC7dVeMwzQ9EPEc8Kkn9Fop8NOKnGrDtpO6XT7Vtyj/bmRyt1jRv41s7rb7wftTj/PJwcnJdd3cITJYoXnUceavPTfNd0vXXx069MFJ564qahV7DjZsSxc+zeL4cT8ohoimjenSTgBIVSob/u/yrwIzeE89a/4VFvMik3+qXNoKAJqm+TFKemHx0ZuLiL94JqNmjTLh0ZI3TABAW/PWauz9CA6cQRFrzLK+pWZ9NqUa2dxtZp6Qih476fzNpmjdA3MdAGK+24bgxTDLSGAnY84Q+MCy9Wyh4kNtGqyWdyS9vpHNif4qALQ04bstDk115K6WoPtGtbysc51soaKIc2Ax82DvXhcABMtkLCbWhPlFrvGLTP6pYVuLum0dA7gJxjwg1gMqKRT/Njecn43q1RUYAOrpvAPgJnhUGFP7++ut+ALMQmhKewL+JBpVdaDjjA5TYI1Fu+2zL1c1vfo8X3geBf5sQsGNn6YclmrbasC+xPaEL0NrvmKqSUADjSpMWXOGbY0wswRR8N9giZipTeCXz01z0aiVAku58garP/Rq+Zyz37wIoodRgF9Kt0tnWNH9oP3AWxi2NaIYvxCYg2KCxCACuNzIFG50e/a7eq6PKKlS0lHnvYkAAAAASUVORK5CYII=">
 																	<!--end::Svg Icon-->
 																</span>
 															</a>
