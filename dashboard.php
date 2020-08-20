@@ -121,7 +121,7 @@
 										<!--begin::Breadcrumb-->
 										<ul class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold my-2 p-0">
 											<li class="breadcrumb-item">
-												<a href="Dashboard.php" class="text-muted">Dashboard</a>
+												<a href="dashboard.php" class="text-muted">Dashboard</a>
 											</li>
 										</ul>
 									</div>
@@ -131,7 +131,7 @@
 								<!--begin::Toolbar-->
 								<div class="d-flex align-items-center">
 									<!--begin::Button-->
-									<a href="#" class="btn btn-fh btn-white btn-hover-primary font-weight-bold px-2 px-lg-5 mr-2">
+									<a href="insert.php?data=ex" class="btn btn-fh btn-white btn-hover-primary font-weight-bold px-2 px-lg-5 mr-2">
 									<span class="svg-icon svg-icon-success svg-icon-lg">
 										<!--begin::Svg Icon | path:assets/media/svg/icons/Files/File.svg-->
 										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -146,7 +146,7 @@
 									</span>New Expense</a>
 									<!--end::Button-->
 									<!--begin::Button-->
-									<a href="insert.ht" class="btn btn-fh btn-white btn-hover-primary font-weight-bold px-2 px-lg-5 mr-2">
+									<a href="insert.php?data=in" class="btn btn-fh btn-white btn-hover-primary font-weight-bold px-2 px-lg-5 mr-2">
 										<span class="svg-icon svg-icon-success svg-icon-lg">
 
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Add-user.svg-->

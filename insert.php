@@ -88,7 +88,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								<!--end::Item-->
 								<!--begin::Item-->
 								<li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Insert">
-									<a href="insert.php" class="nav-link btn btn-icon btn-clean btn-lg">
+									<a href="Neptune/insert.php" class="nav-link btn btn-icon btn-clean btn-lg">
 										<span class="svg-icon svg-icon-xl">
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Group.svg-->
 											<!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -151,7 +151,19 @@ License: You must have a valid license purchased only from themeforest(the above
 										<!--begin::Card-->
 										<div class="card card-custom gutter-b example example-compact">
 											<div class="card-header">
-												<h3 class="card-title">Add Expense / Income</h3>
+												<?php
+													if (!empty($_GET)){
+														if($_GET["data"] == 'ex'){
+															echo '<h3 class="card-title">Add Expense</h3>';
+														}
+														elseif($_GET["data"] == 'in'){
+															echo '<h3 class="card-title">Add Income</h3>';
+														}
+													}
+													else{
+														echo '<h3 class="card-title">Add Expense / Income</h3>';
+													}
+												?>
 												<div class="card-toolbar">
 												</div>
 											</div>
@@ -164,14 +176,30 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="card-body">
 													<div class="form-group row">
 														<div class="col-lg-6">
-															<label>Choose type</label>
 															<div class="radio-inline">
-																<label class="radio radio-solid">
-																<input type="radio" name="type" checked="checked" value="1" />Expense
-																<span></span></label>
-																<label class="radio radio-solid">
-																<input type="radio" name="type" value="2" />Income
-																<span></span></label>
+																<?php
+																if (!empty($_GET)){
+																	if($_GET["data"] == 'ex'){
+																		echo '<label class="radio radio-solid">
+																		<input type="radio" name="type" checked="checked" value="1" />Expense
+																		<span></span></label>';
+																	}
+																	elseif($_GET["data"] == 'in'){
+																		echo '<label class="radio radio-solid">
+																		<input type="radio" name="type" checked="checked" value="2" />Income
+																		<span></span></label>';
+																	}
+																}
+																else{
+																	echo '<label>Choose type</label><br>
+																	<label class="radio radio-solid">
+																	<input type="radio" name="type" checked="checked" value="1" />Expense
+																	<span></span></label>
+																	<label class="radio radio-solid">
+																	<input type="radio" name="type" value="2" />Income
+																	<span></span></label>';
+																}
+																?>
 															</div>
 														</div>
 													</div>
