@@ -246,13 +246,13 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-6">
 															<label>Category</label>
 															  	<select class="form-control" id="category" name="category" style="padding: 6px 4px;">
-																	<option class="form-control" value="Food">Food & Drinks</option>
+																	<option class="form-control" value="Food & Drinks">Food & Drinks</option>
 																	<option class="form-control" value="Shopping">Shopping</option>
 																	<option class="form-control"value="Housing">Housing</option>
 																	<option class="form-control" value="Transportation">Transportation</option>
 																	<option class="form-control" value="Vehicle">Vehicle</option>
 																	<option class="form-control" value="Entertainment">Entertainment</option>
-																	<option class="form-control" value="Pc">Video Games & PC</option>
+																	<option class="form-control" value="PC">PC</option>
 																	<option class="form-control" value="Bills">Bills</option>
 																</select>
 														</div>
