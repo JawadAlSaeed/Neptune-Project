@@ -330,7 +330,7 @@
 														die("Connection failed: " . mysqli_connect_error());
 													}
 													
-													$sql = "SELECT * FROM Expenses ORDER BY amount DESC LIMIT 0,5";
+													$sql = "SELECT * FROM Expenses ORDER BY ID DESC LIMIT 0,5";
 													$result = $conn->query($sql);
 													
 													if ($result->num_rows > 0) {
