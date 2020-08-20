@@ -369,6 +369,7 @@
 																	<span class="text-muted font-weight-bold d-block"><?php echo $recipient?></span>
 																</td>
 																<td></td>
+																<td></td>
 																<td class="text-right pr-0 ">
 																	<span class="text-muted font-weight-bold d-block font-size-sm">Paid</span>
 																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg"><?php echo $amount; ?></span>
