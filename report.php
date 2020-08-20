@@ -160,51 +160,69 @@
 						</div>
 						<!--end::Subheader-->
 						<!--begin::Entry-->
-                        <div class="container">  
-							<h3>Expenses and Incomes</h3>  
-							<br />  
-							<div class="table-responsive">  
-								<table id="ex_en_data" class="table table-striped table-bordered">  
-									<thead>  
-										<tr>   
-												<td>Amount</td>  
-												<td>Type</td>  
-												<td>Category </td>
-												<td>Recipient</td>  
-												<td>Date</td> 
-										</tr>  
-									</thead>  
-									<?php  
-									
-									while($row = mysqli_fetch_array($result) ) 
-									{  
-										if ($result->num_rows > 0) {
-											$amount = $row["amount"];
-											$type = $row["type"];
-											$category = $row["category"];
-											$recipient = $row["recipient"];
-											$date = $row["date"];
-											if($type == 1){
-												$typeName = "Expense";
-											}else{
-												$typeName = "Income";
-											}
-										}
-										echo '  
-										<tr>  
-										
-												<td>'.$amount.'</td>
-												<td>'.$typeName.'</td>
-												<td>'.$category.'</td> 
-												<td>'.$recipient.'</td>
-												<td>'.$date.'</td>
-										</tr>  
-										';  
-									}
-									?>  
-								</table>  
-							</div>  
-						</div>  
+						<div class="d-flex flex-column-fluid">
+							<!--begin::Container-->
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-12">
+										<!--begin::Card-->
+										<div class="card card-custom gutter-b example example-compact">
+											<div class="card-header">
+												<h3 class="card-title">Expenses and Incomes Report</h3>
+												<div class="card-toolbar">
+												</div>
+											</div>
+                                            <div class="container">  
+												<br />  
+												<div class="table-responsive">  
+													<table id="ex_en_data" class="table table-striped table-bordered">  
+														<thead>  
+															<tr>   
+																	<td>Amount</td>  
+																	<td>Type</td>  
+																	<td>Category </td>
+																	<td>Recipient</td>  
+																	<td>Date</td> 
+															</tr>  
+														</thead>  
+														<?php  
+																	
+																	while($row = mysqli_fetch_array($result) ) 
+																	{  
+																		if ($result->num_rows > 0) {
+																			$amount = $row["amount"];
+																			$type = $row["type"];
+																			$category = $row["category"];
+																			$recipient = $row["recipient"];
+																			$date = $row["date"];
+																			if($type == 1){
+																				$typeName = "Expense";
+																			}else{
+																				$typeName = "Income";
+																			}
+																		}
+																		echo '  
+																		<tr>  
+																		
+																				<td>'.$amount.'</td>
+																				<td>'.$typeName.'</td>
+																				<td>'.$category.'</td> 
+																				<td>'.$recipient.'</td>
+																				<td>'.$date.'</td>
+																		</tr>  
+																		';  
+																	}
+																	?>  
+													</table>  
+												</div>  
+											</div>  
+										</div>
+										<!--end::Card-->
+									</div>
+								</div>
+							</div>
+							<!--end::Container-->
+						</div>
 						<!--end::Entry-->
 					</div>
 					<!--end::Content-->
