@@ -1,4 +1,4 @@
-![Neptune](Logo.png)
+![Neptune](assets/media/logos/Neptune-Main-Logo.png)
 
 
 # Neptune Project
