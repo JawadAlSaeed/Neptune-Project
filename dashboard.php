@@ -377,7 +377,7 @@
 																<td></td>
 																<td class="text-right pr-0 ">
 																	<span class="text-muted font-weight-bold d-block font-size-sm"><?php echo $typeName;  ?></span>
-																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg"><?php echo $amount; ?></span>
+																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg"><?php echo $amount; ?> SAR</span>
 																</td>
 																<!-- <td class="text-right">
 																	<span class="font-weight-bolder text-primary"></span>
