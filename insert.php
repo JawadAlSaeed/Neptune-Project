@@ -172,6 +172,9 @@ License: You must have a valid license purchased only from themeforest(the above
 														elseif($_GET["status"] == 'success'){
 															echo '<h3 class="card-title">Add Expense / Income</h3>';
 														}
+														elseif($_GET["error"] == 'emptyfields'){
+															echo '<h3 class="card-title">Add Expense / Income</h3>';
+														}
 													}
 													else{
 														echo '<h3 class="card-title">Add Expense / Income</h3>';
@@ -203,6 +206,15 @@ License: You must have a valid license purchased only from themeforest(the above
 																		<span></span></label>';
 																	}
 																	elseif($_GET["status"] == 'success'){
+																		echo '<label>Choose type</label><br>
+																		<label class="radio radio-solid">
+																		<input type="radio" name="type" checked="checked" value="1" />Expense
+																		<span></span></label>
+																		<label class="radio radio-solid">
+																		<input type="radio" name="type" value="2" />Income
+																		<span></span></label>';
+																	}
+																	elseif($_GET["error"] == 'emptyfields'){
 																		echo '<label>Choose type</label><br>
 																		<label class="radio radio-solid">
 																		<input type="radio" name="type" checked="checked" value="1" />Expense
@@ -354,14 +366,21 @@ License: You must have a valid license purchased only from themeforest(the above
 												</div>
 												<!--mgs-->
 												<p style="padding-left: 30px; color:#1BC5BD;">
-												
 													<?php
-													if (!empty($_GET['status'])){
-													if ($_GET['status'] == 'success') {
-														echo "Submitted Successfully!";
-													}else {
-														echo "";
-													  }}
+														if (!empty($_GET['error'])){
+															if ($_GET['error'] == 'emptyfields') {
+																echo "<P style='padding-left: 30px; color:red;'>Please fill all data!</p>";
+															}
+														}
+														if (!empty($_GET['status'])){
+															if ($_GET['status'] == 'success') {
+																echo "Submitted Successfully!";
+															}
+
+															else {
+																echo "";
+															}
+														}
 													?>
 												</p>
 											<!--mgs-->
