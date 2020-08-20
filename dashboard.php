@@ -241,7 +241,7 @@
 															<div class="card-body">
 																
 																<div class="text-inverse-success font-weight-bolder font-size-h2 mt-3"><?php echo $total?></div>
-																<a href="#" class="text-inverse-success font-weight-bold font-size-lg mt-1">Total</a>
+																<a href="#" class="text-inverse-success font-weight-bold font-size-lg mt-1">Balance</a>
 															</div>
 														</div>
 														<!--end::Tiles Widget 12-->
