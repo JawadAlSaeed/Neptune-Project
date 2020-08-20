@@ -286,70 +286,7 @@ License: You must have a valid license purchased only from themeforest(the above
 															<div class="tab-pane active" id="example_code_html" role="tabpanel">
 																<div class="example-highlight">
 																	<pre style="height:400px">
-<code class="language-html">
-        &lt;form class="form"&gt;
-         &lt;div class="card-body"&gt;
-          &lt;div class="form-group row"&gt;
-           &lt;div class="col-lg-6"&gt;
-            &lt;label&gt;Full Name:&lt;/label&gt;
-            &lt;input type="email" class="form-control" placeholder="Enter full name"/&gt;
-            &lt;span class="form-text text-muted"&gt;Please enter your full name&lt;/span&gt;
-           &lt;/div&gt;
-           &lt;div class="col-lg-6"&gt;
-            &lt;label&gt;Contact Number:&lt;/label&gt;
-            &lt;input type="email" class="form-control" placeholder="Enter contact number"/&gt;
-            &lt;span class="form-text text-muted"&gt;Please enter your contact number&lt;/span&gt;
-           &lt;/div&gt;
-          &lt;/div&gt;
-          &lt;div class="form-group row"&gt;
-           &lt;div class="col-lg-6"&gt;
-            &lt;label&gt;Address:&lt;/label&gt;
-            &lt;div class="input-group"&gt;
-             &lt;input type="text" class="form-control" placeholder="Enter your address"/&gt;
-             &lt;div class="input-group-append"&gt;&lt;span class="input-group-text"&gt;&lt;i class="la la-map-marker"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
-            &lt;/div&gt;
-            &lt;span class="form-text text-muted"&gt;Please enter your address&lt;/span&gt;
-           &lt;/div&gt;
-           &lt;div class="col-lg-6"&gt;
-            &lt;label&gt;Postcode:&lt;/label&gt;
-            &lt;div class="input-group"&gt;
-             &lt;input type="text" class="form-control" placeholder="Enter your postcode"/&gt;
-             &lt;div class="input-group-append"&gt;&lt;span class="input-group-text"&gt;&lt;i class="la la-bookmark-o"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
-            &lt;/div&gt;
-            &lt;span class="form-text text-muted"&gt;Please enter your postcode&lt;/span&gt;
-           &lt;/div&gt;
-          &lt;/div&gt;
-          &lt;div class="form-group row"&gt;
-           &lt;div class="col-lg-6"&gt;
-            &lt;label&gt;User Group:&lt;/label&gt;
-            &lt;div class="radio-inline"&gt;
-             &lt;label class="radio radio-solid"&gt;
-              &lt;input type="radio" name="example_2" checked="checked" value="2"/&gt; Sales Person
-              &lt;span&gt;&lt;/span&gt;
-             &lt;/label&gt;
-             &lt;label class="radio radio-solid"&gt;
-              &lt;input type="radio" name="example_2" value="2"/&gt; Customer
-              &lt;span&gt;&lt;/span&gt;
-             &lt;/label&gt;
-            &lt;/div&gt;
-            &lt;span class="form-text text-muted"&gt;Please select user group&lt;/span&gt;
-           &lt;/div&gt;
-          &lt;/div&gt;
-         &lt;/div&gt;
-         &lt;div class="card-footer"&gt;
-          &lt;div class="row"&gt;
-           &lt;div class="col-lg-6"&gt;
-            &lt;button type="reset" class="btn btn-primary mr-2"&gt;Save&lt;/button&gt;
-            &lt;button type="reset" class="btn btn-secondary"&gt;Cancel&lt;/button&gt;
-           &lt;/div&gt;
-           &lt;div class="col-lg-6 text-right"&gt;
-            &lt;button type="reset" class="btn btn-danger"&gt;Delete&lt;/button&gt;
-           &lt;/div&gt;
-          &lt;/div&gt;
-         &lt;/div&gt;
-        &lt;/form&gt;
-        </code>
-</pre>
+																	</pre>
 																</div>
 															</div>
 														</div>
