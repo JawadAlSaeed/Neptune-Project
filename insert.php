@@ -28,6 +28,8 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!--begin::Layout Themes(used by all pages)-->
 		<!--end::Layout Themes-->
 		<link rel="shortcut icon" href="Neptune/assets/media/logos/neptune-logo.png" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
@@ -244,16 +246,44 @@ License: You must have a valid license purchased only from themeforest(the above
 															<input type="number" class="form-control" name="amount" placeholder="0" />
 														</div>
 														<div class="col-lg-6">
+														<script type="text/javascript">
+															$("input[type='radio'][name='type']").change(function(){
+															
+																var selected = $("input[type='radio'][name='type']:checked").val();
+																
+																if(selected == 1) var opts = [
+																	{name:"Food & Drinks", val:"Food & Drinks"},
+																	{name:"Housing", val:"Housing"},
+																	{name:"Transportation", val:"Transportation"},
+																	{name:"Vehicle", val:"Vehicle"},
+																	{name:"Entertainment", val:"Entertainment"},
+																	{name:"PC", val:"PC"},
+																	{name:"Bills", val:"Bills"},
+																	{name:"Shopping", val:"Shopping"},
+																	{name:"Other", val:"Other"}
+
+																];
+																
+																else var opts = [
+																	{name:"Salary", val:"Salary"},
+																	{name:"Bonus", val:"Bonus"},
+																	{name:"Investment", val:"Investment"},
+																	{name:"Other", val:"Other"}
+																];
+																
+																$("#category_option").empty();
+																
+																$.each(opts, function(k,v){
+																	
+																	$("#category_option").append("<option class=\"form-control\"value='"+v.val+"'>"+v.name+"</option>");
+																	
+																});
+															});
+
+														</script>
 															<label>Category</label>
-															  	<select class="form-control" id="category" name="category" style="padding: 6px 4px;">
-																	<option class="form-control" value="Food & Drinks">Food & Drinks</option>
-																	<option class="form-control" value="Shopping">Shopping</option>
-																	<option class="form-control"value="Housing">Housing</option>
-																	<option class="form-control" value="Transportation">Transportation</option>
-																	<option class="form-control" value="Vehicle">Vehicle</option>
-																	<option class="form-control" value="Entertainment">Entertainment</option>
-																	<option class="form-control" value="PC">PC</option>
-																	<option class="form-control" value="Bills">Bills</option>
+															  	<select class="form-control" id="category_option" name="category" style="padding: 6px 4px;">
+											
 																</select>
 														</div>
 													</div>
@@ -795,6 +825,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<script src="assets/plugins/global/plugins.bundle.js"></script>
 		<script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
 		<script src="assets/js/scripts.bundle.js"></script>
+
 		<!--end::Global Theme Bundle-->
 	</body>
 	<!--end::Body-->

@@ -257,7 +257,7 @@
 												<div class="card card-custom bg-radial-gradient-success gutter-b card-stretch">
 													<!--begin::Header-->
 													<div class="card-header border-0 py-5">
-														<h3 class="card-title font-weight-bolder text-white"> Category Analysis </h3>
+														<h3 class="card-title font-weight-bolder text-white">Expenses Category </h3>
 													</div>
 													<!--end::Header-->
 													<!--begin::Body-->
@@ -281,7 +281,7 @@
 																['amount', 'category'],
 																<?php
 																	
-																$sql = "SELECT category , SUM(amount) as amount FROM Expenses GROUP BY category";
+																$sql = "SELECT category , SUM(amount) as amount FROM Expenses WHERE type=1 GROUP BY category";
 																	
 																$fire = mysqli_query($con,$sql);
 																while ($result = mysqli_fetch_assoc($fire)) {
@@ -420,6 +420,12 @@
 																			echo ' <img src="assets/media/svg/Category/PC.svg" class="h-75 align-self-end" alt="" />';
 																		}else if ($category == "Bills"){
 																			echo ' <img src="assets/media/svg/Category/Bills.svg" class="h-75 align-self-end" alt="" />';
+																		}else if ($category == "Salary"){
+																			echo '<img src="https://img.icons8.com/dusk/64/000000/get-cash.png" class="h-75 align-self-end" alt=""/>';
+																		}else if ($category == "Bonus"){
+																			echo '<img src="https://img.icons8.com/dusk/64/000000/get-cash.png" class="h-75 align-self-end" alt=""/>';
+																		}else if ($category == "Investment"){
+																			echo '<img src="https://img.icons8.com/dusk/64/000000/get-cash.png" class="h-75 align-self-end" alt=""/>';
 																		}else{
 																			echo ' <img src="assets/media/svg/Category/Other.svg" class="h-75 align-self-end" alt="" />';
 																		}
