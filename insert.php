@@ -247,7 +247,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 														<div class="col-lg-6">
 														<script type="text/javascript">
-															$("input[type='radio'][name='type']").change(function(){
+															$("input[type='radio'][name='type']").click(function(){
 															
 																var selected = $("input[type='radio'][name='type']:checked").val();
 																

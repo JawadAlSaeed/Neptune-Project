@@ -200,19 +200,21 @@
 													
 													$sql = "SELECT SUM(amount) as amount FROM Expenses WHERE type=2";
 													$sql2 = "SELECT SUM(amount) as amount FROM Expenses WHERE type=1";
-
+													
 													$result = $conn->query($sql);
 													$result2 = $conn->query($sql2);
-
+													
 													if ($result->num_rows > 0) {
 														// output data of each row
 														while($row = $result->fetch_assoc()) {
-															$Income = $row["amount"];}}
+															$Income = $row["amount"];}
+														}
+														
 													if ($result2->num_rows > 0) {
 														// output data of each row
 														while($row2 = $result2->fetch_assoc()) {
 															$Expenses = $row2["amount"];}}
-													$total=$Income - $Expenses;
+															$total=$Income - $Expenses;
 															
 												?>
 												<div class="col-xl-4">
@@ -257,7 +259,7 @@
 												<div class="card card-custom bg-radial-gradient-success gutter-b card-stretch">
 													<!--begin::Header-->
 													<div class="card-header border-0 py-5">
-														<h3 class="card-title font-weight-bolder text-white">Expenses Category </h3>
+														<h3 class="card-title font-weight-bolder text-white">Expenses Categories </h3>
 													</div>
 													<!--end::Header-->
 													<!--begin::Body-->
