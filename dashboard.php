@@ -403,7 +403,27 @@
 																<td class="pl-0">
 																	<div class="symbol symbol-50 symbol-light mr-2 mt-2">
 																		<span class="symbol-label">
-																			<img src="assets/media/svg/avatars/001-boy.svg" class="h-75 align-self-end" alt="" />
+																		<?php 
+																		if ($category == "Food & Drinks"){
+																			echo <img src="assets/media/svg/Category/Food.svg" class="h-75 align-self-end" alt="" />;
+																		}else if ($category == "Shopping"){
+																			echo <img src="assets/media/svg/Category/Shopping.svg" class="h-75 align-self-end" alt="" />;
+																		}else if ($category == "Housing"){
+																			echo <img src="assets/media/svg/Category/Housing.svg" class="h-75 align-self-end" alt="" />;
+																		}else if ($category == "Transportation"){
+																			echo <img src="assets/media/svg/Category/Transportation.svg" class="h-75 align-self-end" alt="" />;
+																		}else if ($category == "Vehicle"){
+																			echo <img src="assets/media/svg/Category/Vehicle.svg" class="h-75 align-self-end" alt="" />;
+																		}else if ($category == "Entertainment"){
+																			echo <img src="assets/media/svg/Category/Entertainment.svg" class="h-75 align-self-end" alt="" />;
+																		}else if ($category == "PC"){
+																			echo <img src="assets/media/svg/Category/PC.svg" class="h-75 align-self-end" alt="" />;
+																		}else if ($category == "Bills"){
+																			echo <img src="assets/media/svg/Category/Bills.svg" class="h-75 align-self-end" alt="" />;
+																		}else{
+																			echo <img src="assets/media/svg/Category/Other.svg" class="h-75 align-self-end" alt="" />;
+																		}
+																		?>
 																		</span>
 																	</div>
 																</td>
