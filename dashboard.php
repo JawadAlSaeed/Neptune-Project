@@ -221,7 +221,7 @@
 														<!--begin::Tiles Widget 11-->
 														<div class="card card-custom gutter-b" style="height: 100px">
 														<div class="card-body">
-																<div class="text-dark font-weight-bolder font-size-h2 mt-3"> + <?php echo $Income?></div>
+																<div class="text-dark font-weight-bolder font-size-h2 mt-3"> + <?php echo $Income?> SAR </div>
 																<a href="#" class="text-muted text-hover-primary font-weight-bold font-size-lg mt-1">Income</a>
 															</div>
 														</div>
@@ -231,7 +231,7 @@
 														<!--begin::Tiles Widget 11-->
 														<div class="card card-custom gutter-b" style="height: 100px">
 															<div class="card-body">
-																<div class="font-weight-bolder font-size-h2 mt-3" style="color: red"> - <?php echo $Expenses?></div>
+																<div class="font-weight-bolder font-size-h2 mt-3" style="color: red"> - <?php echo $Expenses?> SAR </div>
 																<a href="#" class="text-muted text-hover-primary font-weight-bold font-size-lg mt-1">Expenses</a>
 															</div>
 														</div>
@@ -242,7 +242,7 @@
 														<div class="card card-custom bg-success gutter-b" style="height: 100px">
 															<div class="card-body">
 																
-																<div class="text-inverse-success font-weight-bolder font-size-h2 mt-3"><?php echo $total?></div>
+																<div class="text-inverse-success font-weight-bolder font-size-h2 mt-3"><?php echo $total?> SAR </div>
 																<a href="#" class="text-inverse-success font-weight-bold font-size-lg mt-1">Balance</a>
 															</div>
 														</div>
@@ -368,7 +368,7 @@
 															$recipient = $row["recipient"];
 															$date = $row["date"];
 															if($type == 1){
-																$typeName = "Expense";
+																$typeName = "Expenses";
 															}else{
 																$typeName = "Income";
 															}
