@@ -7,14 +7,15 @@ This is the ISQTB Bootcamp web project
 
 ## Summary
 
-This is an app about Budget and expenses tracking.
+Neptune is a Web-Based Application to track Income and Expenses.
 
 ## Features
 
-* Track Expense  
-* Track Income  
-* Set Budget
 * Analyze Balance
+* Track Expense.
+* Track Income.
+* Track based on Category.
+* View all inserted qureys in a report.
 
 
 ## Installation 
